@@ -6,21 +6,19 @@ webhook_url:
 sections:
 - type: document
   path: data/homepage.yml
-  label: Homepage
-  match: "**/*"
+  label: Hauptseite
 - type: document
   path: data/contact.yml
-  label: Contact
-  match: "**/*"
+  label: Kontakt
 - type: directory
   path: content/blog
   label: Blog
-  create: all
+  create: documents
   match: "**/*"
 - type: directory
   path: content/products
-  label: Products
-  create: all
+  label: Produkte
+  create: documents
   match: "**/*"
 upload_dir: static/uploads
 public_path: "/uploads"
